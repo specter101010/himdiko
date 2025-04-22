@@ -1,0 +1,65 @@
+.container_section2{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+
+.container_section2 img{
+    width: 370px;
+    border-radius: 50%;
+}
+
+.title_visiMisi{
+    font-family: "Jaro", sans-serif;
+    font-weight: 600;
+    font-size: 30px; 
+    color: #123524;
+    margin-bottom: 15px;
+}
+
+.content_visiMisi{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    font-weight: 500;
+
+}
+
+.section_visi_misi{
+    /* background-color: rebeccapurple; */
+    
+}
+
+
+.title_visi{
+    font-family: "Jaro", sans-serif;
+    font-weight: 600;
+    font-size: 30px; 
+    color: #123524;
+    margin-bottom: 15px;
+}
+
+.content_visi{
+    width: 370px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.title_misi{
+    font-family: "Jaro", sans-serif;
+    font-weight: 600;
+    font-size: 30px; 
+    color: #123524;
+    margin-bottom: 15px;
+}
+
+.content_misi{
+    width: 370px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,116 @@
+.container_cerita_alumni{
+    width: 100%;
+    height: 800px;
+}
+
+.title_alumni{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    margin-left: 70px;
+    color: #123524;
+    display: flex;
+    transform: translateY(100px);
+    gap: 15px;
+}
+
+.title_alumni_half{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #C9DDCB;
+}
+
+
+.container_card{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+  .card_alumni {
+    background: #C9DDCB;
+    width: 800px;
+    height: 300px;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .img_petik{
+    transform: translateX(-330px)translateY(50px);
+  }
+  
+  .text_card{
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_alumni p {
+    /* background-color: blue; */
+    margin-top: 30px;
+    text-align: left;
+    width: 500px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: italic                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
+    color: #123524;
+  }
+  
+  .card_alumni:hover {
+    transform: scale(1.02);
+  }
+  
+  .card_profile{
+    /* background-color: red; */
+    display: flex;
+    margin-top: 40px;
+    justify-content: left;
+  }
+
+  .card_profile h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #123524;
+  }
+
+  .card_photo{
+    width: 70px;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+
+  .card_photo img {
+    width: 70px;
+    border-radius: 50%;
+    transform: translateY(3px);
+  }
+
+
+.dflex{
+    display: flex;
+}
+
+.prev-button{
+    position: relative;
+    transform: translateY(340px)translateX(1030px);
+}
+
+.next-button{
+    position: relative;
+    transform: translateY(340px)translateX(50px);
+}

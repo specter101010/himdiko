@@ -1,0 +1,35 @@
+.container_video{
+    margin-top: 60px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+
+
+
+
+
+
+.rectangle_video{
+    border: 2px solid #123524;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.rectangle_video img{
+    width: 40px;
+}
+
+.rectangle_video p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #123524;
+}
