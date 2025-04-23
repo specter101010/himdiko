@@ -25,8 +25,18 @@
 
 .kontak {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
+
+.kontak_list img {
+    transition: all 0.3s ease; /* Menambahkan animasi halus saat transisi */
+}
+
+.kontak_list img:hover {
+    filter: invert(92%) sepia(25%) saturate(200%) hue-rotate(75deg) brightness(100%) contrast(100%);
+    transform: scale(1.1); /* Menambah sedikit efek zoom saat hover */
+}
+
 
 .title_himdiko{
     font-family: "Jaro", sans-serif;
@@ -48,6 +58,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-size: 25px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     font-style: normal;
     color: #123524;
     cursor: pointer;
@@ -109,24 +120,30 @@
     position: relative;
   }
   
-  /* Default: sembunyiin dropdown */
-  .dropdown_navbar1,
-  .dropdown_navbar2,
-  .dropdown_navbar3 {
-    display: none;
-    position: absolute;
-    background-color: #F5F5F5;
-    padding: 10px 30px;
-    border-radius: 5px;
-    z-index: 10;
-  }
-  
-  /* Show when nav_item di-hover */
-  .nav_item:hover .dropdown_navbar1,
-  .nav_item:hover .dropdown_navbar2,
-  .nav_item:hover .dropdown_navbar3 {
-    display: block;
-  }
+ /* Default: sembunyiin dropdown dengan animasi */
+.dropdown_navbar1,
+.dropdown_navbar2,
+.dropdown_navbar3 {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  position: absolute;
+  background-color: #F5F5F5;
+  padding: 10px 30px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Tampilkan dengan animasi pas hover */
+.nav_item:hover .dropdown_navbar1,
+.nav_item:hover .dropdown_navbar2,
+.nav_item:hover .dropdown_navbar3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
   
   /* Posisi masing-masing dropdown */
   /* .dropdown_navbar1 {

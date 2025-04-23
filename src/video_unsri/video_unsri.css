@@ -1,4 +1,4 @@
-.container_video{
+.container_video {
     margin-top: 60px;
     margin-left: 70px;
     display: flex;
@@ -6,13 +6,7 @@
     align-items: left;
 }
 
-
-
-
-
-
-
-.rectangle_video{
+.rectangle_video {
     border: 2px solid #123524;
     border-radius: 10px;
     display: flex;
@@ -22,14 +16,33 @@
     gap: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.rectangle_video img{
+.rectangle_video:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.rectangle_video img {
     width: 40px;
+    transition: transform 0.3s ease; 
 }
 
-.rectangle_video p{
+.rectangle_video:hover img {
+    transform: rotate(10deg); 
+}
+
+.rectangle_video p {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: #123524;
+    transition: color 0.3s ease; 
+}
+
+.rectangle_video:hover p {
+    color: #C9DDCB; 
+    -webkit-text-stroke: 0.5px #123524;
+
 }

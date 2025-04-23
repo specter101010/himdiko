@@ -1,0 +1,67 @@
+.container_not_found div p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: #123524;
+    font-size: 86px;
+    transform: translateY(220px);
+    z-index: 100;
+    -webkit-text-stroke: 1px #123524;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container_NOT_FOUND_img p span{
+    color: #C9DDCB;
+}
+
+.container_not_found{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_img_not_found{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_img_not_found img{
+    width: 300px;
+}
+
+.describe_not_found{
+    margin-top: 40px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #123524; 
+    justify-content: center;
+}
+
+.container_button {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+  }
+  
+  .button_back button {
+    padding: 10px 50px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #123524; 
+    background-color: transparent;
+    border: 2px solid #123524;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    gap: 8px;
+  }
+
+
+  
+

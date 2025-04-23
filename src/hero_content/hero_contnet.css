@@ -1,31 +1,148 @@
-.container_hero{
+.container_hero {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-}
-
-
-.container_hero_content{
-    
-}
-
-.title_hero_content{
+  }
+  
+  .title_hero_content {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     color: #123524;
     font-size: 96px;
-}
-
-.deskripsi_hero_content{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efek glitch saat hover */
+  .title_hero_content:hover {
+    animation: glitchAnimation 2s infinite ease-in-out;
+  }
+  
+  @keyframes glitchAnimation {
+    0% {
+      transform: translateX(0);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    15% {
+      transform: translateX(-3px);
+      text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.6);
+    }
+    30% {
+      transform: translateX(3px);
+      text-shadow: 3px -3px 5px rgba(0, 0, 0, 0.6);
+    }
+    45% {
+      transform: translateX(-3px);
+      text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.7);
+    }
+    60% {
+      transform: translateX(3px);
+      text-shadow: 3px -3px 6px rgba(0, 0, 0, 0.7);
+    }
+    75% {
+      transform: translateX(-3px);
+      text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.8);
+    }
+    100% {
+      transform: translateX(0);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+  .deskripsi_hero_content {
     width: 400px;
     color: #123524;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-}
+    line-height: 1.6;
+  }
+  
+  .word {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .word.hovered {
+    transform: scale(1.2); /* Membesarkan kata */
+    color: #C9DDCB;        /* Warna hijau muda */
+    cursor: pointer;
+    -webkit-text-stroke: 0.4px #123524;
+  }
+  
+  
+  .container_image_hero_content img {
+    width: 450px;
+    margin-top: 0px;
+  }
 
-.container_image_hero_content img{
-    width: 500px;
-    margin-top: 40px;
-}
-
-
+  .title_hero_image{
+    width: 400px;
+    height: 80px;
+  }
+  
+@keyframes fadeSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-20px); 
+    }
+  }
+  
+  .reactangle_nama {
+    width: 100%;
+    height: 50px;
+    background-color: #123524;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translateY(-20px); 
+    animation: fadeSlideDown 1s ease-out forwards;
+  }
+  
+  .reactangle_nama:hover {
+    background-color: #1a4a33;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reactangle_nama span {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+  }
+  
+  .reactangle_nama span:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Untuk judul di bawah rectangle */
+  @keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px); /* dari lebih atas */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-20px); /* posisi akhir juga -20px */
+    }
+  }
+  
+  .reactangle_title_nama {
+    color: #123524;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-20px);
+    animation: fadeDown 1s ease-out forwards;
+  }
+  
